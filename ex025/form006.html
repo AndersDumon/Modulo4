@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body><!--Checkbox e Radios-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <!--Radios-->
+        <fieldset>
+            <!--O name tem que ser o mesmo para todos-->
+            <input type="radio" name="sexo" id="xmas" value="M">
+                <label for="xmas">Masculino</label>
+            <input type="radio" name="sexo" id="xfem" value="F" checked>
+                <label for="xfem">Feminino</label>
+            <!--checked já deixa marcado-->
+
+        </fieldset>
+
+            <!--Check box-->
+        <fieldset>
+            <legend>Espotes favoritos</legend>
+            <input type="checkbox" name="esba" id="iesba">
+                <label for="iesba">Basquete</label><br>
+
+            <input type="checkbox" name="esfut" id="iesfut">
+                <label for="iesfut">Futebol</label><br>
+
+            <input type="checkbox" name="esnat" id="iesnat">
+                <label for="iesnat">Natação</label><br>
+
+            <input type="checkbox" name="este" id="ieste">
+                <label for="ieste">Tênis</label><br>
+
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
